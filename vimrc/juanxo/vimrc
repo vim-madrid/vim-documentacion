@@ -1,0 +1,177 @@
+version 7.0
+
+" GENERAL
+
+set nocompatible
+
+" This sets ,(easier to type) as a special character
+" that you can use in command mode, instead of :
+let mapleader = ","
+let g:mapleader = ","
+
+" USER INTERFACE
+"""""""""""""""""""""""""""
+set ruler " Show line number at bottom
+set cmdheight=2 " Number of rows in the command bar at bottom
+set number " Add line numbers
+set mat=2 " How many tenths of a second between cursor blinks
+set tm=500 " Time to wait between keys to match commands
+set background=dark
+colorscheme slate
+
+" Shameless steal from @fcsonline
+" This configures the status line
+
+let encoding = '[' . (&fenc==''?&enc:&fenc) . ((exists('+bomb') && &bomb) ? ',B' : '') . ']'
+
+set statusline=%f                         "tail of the filename
+set statusline+=%y                        "filetype
+set statusline+=%{encoding}               "encoding
+set statusline+=%{fugitive#statusline()}  "git status
+set statusline+=%m                        "modified flag
+set statusline+=%=                        "left/right separator
+set statusline+=%c,                       "cursor column
+set statusline+=%l/%L                     "cursor line/total lines
+set statusline+=\ %P                      "percent through file
+set laststatus=2
+
+" An example of this line would be:
+"script.js[js][utf-8][Git(mybranch)][+]           40,30/90 30%
+
+" Highlight undesired chars (tabs and trail spaces)
+set list listchars=tab:..,trail:·
+
+" SEARCH
+"""""""""""""""""""""""""""
+set ignorecase " Ignore case when searching
+set smartcase " Unless we use a uppercase letter
+set hlsearch " Highlights the search
+set incsearch " Make search incremental
+set showmatch " Show search matches in realtime
+
+" FILES AND BACKUPS
+"""""""""""""""""""""""""""
+
+" Don't write any kind of backup files
+set nobackup
+set nowritebackup
+set noswapfile
+
+set fileformat=unix " Use LF for line endings
+
+" Specify the behavior when switching between buffers
+try
+  set switchbuf=usetab
+  set stal=2
+catch
+endtry
+
+" TEXT, TAB AND INDENT RELATED
+"""""""""""""""""""""""""""
+
+set expandtab " I don't want tabs, just spaces
+set shiftwidth=2 " How many spaces to use when autoindenting
+set tabstop=2 " How many spaces to write on TAB
+set smarttab " Use my shiftwidth when using tab
+
+set textwidth=100 " Max char count in a line before doing a hard break
+
+set autoindent " Keep indentation of previous line on new line
+set smartindent " autoindent some structures (like lines after {, etc)
+set wrap " Wrap lines if they get out of view
+
+" Changes command autocompletion behaviour (filepaths, commands, etc)
+set wildmode=list:longest,list:full
+set complete=.,w,t " Set autocomplete mode on insertion
+
+" backspace configuration
+set backspace=eol,start,indent
+set whichwrap+=<,>,h,l
+
+" MAPPINGS AND ABBREVIATIONS
+"""""""""""""""""""""""""""
+imap jk <ESC> " Map jk as ESC when writing in insert mode (faster to reachj)
+
+nmap <leader>w :w!<cr> " Fast save
+
+map <leader>e :e ~/.vimrc<cr> " Fast .vimrc edit
+
+" Hitting F5 will clean out all trailing whitespace or tabs
+nnoremap <silent> <F5> :let _s=@/<Bar>:%s/\s\+$//e<Bar>:let @/=_s<Bar>:nohl<CR>:retab<CR>
+
+map <leader>n :NERDTreeToggle<CR> " Toggle NERDTree (file system explorer)
+
+map <silent> <leader>hl :nohlsearch<CR> " Unhighlight any previous search
+
+map <leader>ba :1,100 bd!<cr> "Close all the buffers
+
+"Use the arrows to move between tabs
+map <right> :bn<cr>
+map <left> :bp<cr>
+
+
+map <C-J> <C-j> "Join lines
+
+" Simpler window movement (just Ctrl + direction)
+map <C-j> <C-W>j
+map <C-h> <C-W>h
+map <C-k> <C-W>k
+map <C-l> <C-W>l
+
+" rspec.vim mappings
+map <leader>t :call RunCurrentSpecFile()<CR>
+map <leader>s :call RunNearestSpec()<CR>
+map <leader>l :call RunLastSpec()<CR>
+map <leader>a :call RunAllSpecs()<CR>
+
+" Function to close a buffer without closing the window
+command! Bclose call <SID>BufcloseCloseIt()
+map <leader>bd :Bclose<cr>
+
+function! <SID>BufcloseCloseIt()
+   let l:currentBufNum = bufnr("%")
+   let l:alternateBufNum = bufnr("#")
+
+   if buflisted(l:alternateBufNum)
+     buffer #
+   else
+     bnext
+   endif
+
+   if bufnr("%") == l:currentBufNum
+     new
+   endif
+
+   if buflisted(l:currentBufNum)
+     execute("bdelete! ".l:currentBufNum)
+   endif
+endfunction
+
+" SYSTEM
+"""""""""""""""""""""""""""
+set autoread " Autoread files when they are changed from another program
+autocmd BufWritePost ~/.vimrc so ~/.vimrc " Reloads the configuration file anytime it's changed
+
+set shell=/bin/zsh
+
+set encoding=utf-8
+try
+    lang en_US
+catch
+endtry
+
+" Checks for terminal color conditions
+if (&t_Co > 2 || has("gui_running")) && !exists("syntax_on")
+  syntax on
+  set nohlsearch
+endif
+
+
+
+" Pathogen (vim plugin to make easier to install other vim plugins)
+filetype off
+
+call pathogen#incubate()
+call pathogen#helptags()
+
+filetype plugin indent on
