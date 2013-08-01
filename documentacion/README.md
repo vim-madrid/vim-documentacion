@@ -2,6 +2,8 @@ Recursos
 =================
 
 ## Libros ##
+* [Practical Vim](http://mislav.uniqpath.com/2011/12/vim-revisited/) (inglés, de pago):
+  Libro con decenas de "recetas" que aplicar a la hora de utilizar Vim en el día a día.
 
 ## Artículos ##
 
