@@ -40,6 +40,10 @@ Enlace donde se te pueda encontrar y consultar en caso necesario (correo, twitte
 * Si es un fichero, añádelo a la carpeta documentacion
 * Si se trata de un enlace a un recurso externo, añádelo al final del README dentro de la carpeta
   documentación.
+* Si consideras que el fichero o enlace que propones pertenece a una categoría que aún no existe,
+  simplemente crea la categoria en el README o una carpeta nueva dentro de documentación y explica
+  brevemente la idea de esa categoria en el pull request. Categorías nuevas podrían ser chuletas,
+  capturas, retos...
 * Crea un pull request
 
 ## Tengo una duda ##
