@@ -23,4 +23,11 @@ Un archivo de configuración para novatos, sencillo pero potente, con el que emp
 * [vimtips twitter](https://twitter.com/vimtips)/[vimtweets](http://www.vimtweets.com)(inglés):
   Cuenta en twitter que de vez en cuando pone pequeños consejos
 * [vim adventures](http://vim-adventures.com/)(inglés): juego interactivo para aprender VIM
+* [Vimcasts](http://vimcasts.org/) (inglés): tutoriales en vídeo, del autor de Practical Vim.
+
+
+## Otros ##
+
+* [VimGolf](http://vimgolf.com/) (inglés): retos en los que tienes que convertir el texto de entrada en la salida propuesta con el menor número de pulsaciones. 
+* [Vimbits](http://vimbits.com/) (inglés): pequeños snippets de configuración.
 
