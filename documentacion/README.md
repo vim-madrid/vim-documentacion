@@ -2,6 +2,12 @@ Recursos
 =================
 
 ## Libros ##
+### Recomendados ###
+* [Learning the vi and Vim Editors, 7th Edition](http://shop.oreilly.com/product/9780596529833.do)
+* [Practical Vim: Edit Text at the Speed of Thought](http://pragprog.com/book/dnvim/practical-vim)
+
+### Gratuitos ###
+* [The Vim Book](http://iccf-holland.org/click5.html#oualline)
 
 ## Artículos ##
 
