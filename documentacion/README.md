@@ -15,6 +15,8 @@ Muy extenso y con muchos ejemplos. Buena continuación al vim-tutor.
   Consejos para aquellos que estéis empezando con vim
 * [vim koans](http://blog.sanctum.geek.nz/vim-koans/)(inglés):
   Lecciones de Vim en forma de koans.
+* [Example vimrc](http://vim.wikia.com/wiki/Example_vimrc)(inglés):
+Un archivo de configuración para novatos, sencillo pero potente, con el que empezar a trastear y probar. Viene documentado.
 
 ## Tutoriales ##
 
