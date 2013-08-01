@@ -2,6 +2,8 @@ Recursos
 =================
 
 ## Libros ##
+* [Practical Vim](http://pragprog.com/book/dnvim/practical-vim) (inglés, de pago):
+  Libro con decenas de "recetas" que aplicar a la hora de utilizar Vim en el día a día.
 
 ## Artículos ##
 
