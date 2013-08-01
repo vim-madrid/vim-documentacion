@@ -10,7 +10,7 @@ Recursos
 
 ## Tutoriales ##
 
-* [vimtips twitter](https://twitter.com/vimtips)[vimtweets](http://www.vimtweets.com)(inglés):
+* [vimtips twitter](https://twitter.com/vimtips)/[vimtweets](http://www.vimtweets.com)(inglés):
   Cuenta en twitter que de vez en cuando pone pequeños consejos
 * [vim adventures](http://vim-adventures.com/)(inglés): juego interactivo para aprender VIM
 
