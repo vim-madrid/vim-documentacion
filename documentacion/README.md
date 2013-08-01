@@ -7,6 +7,8 @@ Recursos
 
 * [vim revisited](http://mislav.uniqpath.com/2011/12/vim-revisited/)(inglés):
   Consejos para aquellos que estéis empezando con vim
+* [vim koans](http://blog.sanctum.geek.nz/vim-koans/)(inglés):
+  Lecciones de Vim en forma de koans.
 
 ## Tutoriales ##
 
