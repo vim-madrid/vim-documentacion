@@ -1,0 +1,54 @@
+[submodule "documentacion/plugins/ctrlp.vim"]
+	path = documentacion/plugins/ctrlp.vim
+	url = https://github.com/kien/ctrlp.vim
+[submodule "documentacion/plugins/nerdtree"]
+	path = documentacion/plugins/nerdtree
+	url = https://github.com/scrooloose/nerdtree
+[submodule "documentacion/plugins/html5.vim"]
+	path = documentacion/plugins/html5.vim
+	url = https://github.com/othree/html5.vim
+[submodule "documentacion/plugins/vim-jade"]
+	path = documentacion/plugins/vim-jade
+	url = https://github.com/digitaltoad/vim-jade
+[submodule "documentacion/plugins/vim-javascript"]
+	path = documentacion/plugins/vim-javascript
+	url = https://github.com/pangloss/vim-javascript
+[submodule "documentacion/plugins/vim-markdown"]
+	path = documentacion/plugins/vim-markdown
+	url = https://github.com/tpope/vim-markdown
+[submodule "documentacion/plugins/vim-haml"]
+	path = documentacion/plugins/vim-haml
+	url = https://github.com/tpope/vim-haml
+[submodule "documentacion/plugins/vim-ruby"]
+	path = documentacion/plugins/vim-ruby
+	url = https://github.com/vim-ruby/vim-ruby
+[submodule "documentacion/plugins/vim-slim"]
+	path = documentacion/plugins/vim-slim
+	url = https://github.com/slim-template/vim-slim
+[submodule "documentacion/plugins/gist-vim"]
+	path = documentacion/plugins/gist-vim
+	url = https://github.com/mattn/gist-vim
+[submodule "documentacion/plugins/vim-fugitive"]
+	path = documentacion/plugins/vim-fugitive
+	url = https://github.com/tpope/vim-fugitive
+[submodule "documentacion/plugins/ultisnips"]
+	path = documentacion/plugins/ultisnips
+	url = https://github.com/SirVer/ultisnips
+[submodule "documentacion/plugins/vim-surround"]
+	path = documentacion/plugins/vim-surround
+	url = https://github.com/tpope/vim-surround
+[submodule "documentacion/plugins/zencoding-vim"]
+	path = documentacion/plugins/zencoding-vim
+	url = https://github.com/mattn/zencoding-vim
+[submodule "documentacion/plugins/jshint.vim"]
+	path = documentacion/plugins/jshint.vim
+	url = https://github.com/walm/jshint.vim
+[submodule "documentacion/plugins/vim-rspec"]
+	path = documentacion/plugins/vim-rspec
+	url = https://github.com/thoughtbot/vim-rspec
+[submodule "documentacion/plugins/vim-rails"]
+	path = documentacion/plugins/vim-rails
+	url = https://github.com/tpope/vim-rails
+[submodule "documentacion/plugins/webapi-vim"]
+	path = documentacion/plugins/webapi-vim
+	url = https://github.com/mattn/webapi-vim
