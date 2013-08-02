@@ -33,6 +33,8 @@ Enlace donde se te pueda encontrar y consultar en caso necesario (correo, twitte
 * Ten en cuenta que los potenciales lectores de tu configuración pueden ser novatos, por lo que
   explicar lo que hacen los comandos de tu fichero puede ayudar mucho.
 * Crea un pull request con el nombre de '\<usuariogithub\> vimrc'
+* Como agradecimiento por colaborar, se te añadirá como colaborador al repo. Por eso, y para que
+  puedas mantener al día tu vimrc. Pero sobretodo piensa en el agradecimiento XD.
 
 ## Quiero añadir un enlace o un fichero ##
 
