@@ -61,3 +61,53 @@ execute pathogen#infect()
 Debe estar en el fichero antes de activar la sintaxis y el autoindentado.
 Una vez instalado, simplemente clona(o añade un submódulo si usas dotfiles) el plugin dentro de
 `~/.vim/bundle`
+
+### Listado ###
+
+#### Gestión Ficheros ####
+
+* [ctrlp-vim](https://github.com/kien/ctrlp.vim): Permite realizar busquedas usando lógica
+  difusa sobre el directorio y abrir ficheros
+* [nerdtree](https://github.com/scrooloose/nerdtree): Gestor del sistema de ficheros
+
+#### Sintaxis ####
+
+* [html5-syntax](https://github.com/othree/html5-syntax): Añade soporte para html5 en cuanto a
+  sintaxis y demás
+* [jade](https://github.com/digitaltoad/vim-jade): Añade soporte para jade
+* [javascript](https://github.com/pangloss/vim-javascript): Mejora el soporte para trabajar con
+  javascript
+* [markdown](https://github.com/tpope/vim-markdown): Añade soporte de sintaxis e indentación
+  para markdown
+* [vim-haml](https://github.com/tpope/vim-haml): Añade soporte para HAML
+* [vim-ruby](https://github.com/vim-ruby/vim-ruby): Añade soporte para sintaxis y coloreado de
+  ruby
+* [vim-slim](https://github.com/slim-template/vim-slim): Añade soporte para el lenguaje de markup
+  slim
+
+#### Git ####
+
+* [gist-vim](https://github.com/mattn/gist-vim): Crea gists desde vim
+* [vim-fugitive](https://github.com/tpope/vim-fugitive): Puedes gestionar git desde vim(ver diffs,
+  rama actual, cambios...)
+
+#### Manejo de Texto ####
+
+* [ultisnips](https://github.com/SirVer/ultisnips): Permite almacenar snippets que uses con
+  frecuencia
+* [vim-surround](https://github.com/tpope/vim-surround): Súper útil para refactorizar(cambiar
+  `'` por `¨`, cambiar tags html...)
+* [zencoding](https://github.com/mattn/zencoding-vim): Añade soporte para crear html de manera mucho
+  más rápida( `p>div.hola[disabled]` -> `<p><div class=¨hola¨ disabled >`)
+
+#### Automatizacion ####
+
+* [jshint](https://github.com/walm/jshint.vim): Añade un comando para ejecutar jshint desde vim
+* [vim-rspec](https://github.com/thoughtbot/vim-rspec): Permite ejecutar los tests de RSpec desde
+  vim
+
+#### Otros ####
+
+* [vim-rails](https://github.com/tpope/vim-rails): Añade una serie de comandos para poder moverse
+  eficazmente sobre un proyecto rails(generadores, mover entre controladores/vista/modelo...)
+* [webapi-vim](https://github.com/mattn/webapi-vim): Necesario para poder usar el plugin de Gist
