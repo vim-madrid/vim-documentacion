@@ -106,6 +106,11 @@ Una vez instalado, simplemente clona(o añade un submódulo si usas dotfiles) el
 * [vim-rspec](https://github.com/thoughtbot/vim-rspec): Permite ejecutar los tests de RSpec desde
   vim
 
+#### Autocompletado ####
+
+* [YouCompleteMe YCM] (https://github.com/Valloric/YouCompleteMe): Autocompleta y sugiere palabras
+  del lenguaje en el que estés programando.
+
 #### Otros ####
 
 * [vim-rails](https://github.com/tpope/vim-rails): Añade una serie de comandos para poder moverse
