@@ -52,3 +52,6 @@
 [submodule "documentacion/plugins/webapi-vim"]
 	path = documentacion/plugins/webapi-vim
 	url = https://github.com/mattn/webapi-vim
+[submodule "documentacion/plugins/ycm.vim"]
+	path = documentacion/plugins/ycm.vim
+	url = https://github.com/Valloric/YouCompleteMe
